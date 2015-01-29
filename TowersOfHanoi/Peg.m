@@ -22,8 +22,6 @@ float animationSpeed=0.5;
 }
 -(BOOL)addDisk:(Disk *)disk fromPeg:(Peg *)p{
     
-        NSLog(@"doin it");
-        
         if([self getTopDisk]==NULL || [[self getTopDisk] getDiskNum]>disk.getDiskNum){
         if([p removeDisk]){
             
@@ -37,9 +35,7 @@ float animationSpeed=0.5;
             
             [p setTopDiskActive:false];
 
-        
-        NSLog(@"%d", [stack getDisksCount]);
-        [self addDisk:disk];
+            [self addDisk:disk];
             
        // disk.position=CGPointMake(200, 170);
         
@@ -56,7 +52,6 @@ float animationSpeed=0.5;
     }
 }
 -(BOOL)addDisk:(Disk *)disk{
-    NSLog(@"Adding the didsk");
     [disk setPegParent:self];
     return [stack push:disk];
 }
@@ -79,15 +74,12 @@ float animationSpeed=0.5;
 }
 -(BOOL)setTopDiskActive{
     if([stack isEmpty]){
-        NSLog(@"stck empty");
         return false;
     }
     if(topDiskActive){
-        NSLog(@"doin this");
         topDiskActive=false;
         [[stack peek] runAction:[SKAction moveTo:CGPointMake(self.position.x, (self.position.y-60)+(20*([stack getDisksCount]-1))) duration:animationSpeed]];
     }else{
-        NSLog(@"setting top disk to true");
         [(Disk *)[stack peek] runAction:[SKAction sequence:@[[SKAction moveTo:CGPointMake(((Disk *)[stack peek]).position.x, self.position.y+self.size.height/2) duration:animationSpeed]]]];
         topDiskActive=true;
     }

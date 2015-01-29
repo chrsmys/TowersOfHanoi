@@ -19,7 +19,7 @@ extern int diskCount;
 */
 - (id)initWithState:(TWState *)st{
     self=[super init];
-    NSLog(@"diskCount %d", diskCount);
+
     stateQueue=[[Queue alloc] init];
     [stateQueue add:st];
     
