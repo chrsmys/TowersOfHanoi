@@ -12,7 +12,7 @@ Towers of Hanoi for IOS w/ Autosolve
 ==================
 
 This game is created in Spritekit and is a basic implementation of towers of hanoi with an autosolve feature.
-It took about 4 hours to create and design, so it is pretty rough, but it is a perfect example of how to use 
+It took about 4 hours to create and design, but it is a good example of how to use 
 breadth first search to solve basic problems. The autosolve feature solves it based on the current position 
 of the disks on the pegs.
 
