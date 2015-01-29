@@ -1,7 +1,4 @@
 Towers Of Hanoi IOS w/ Autosolve
-================
-
-
 ==================
 Demo
 ==================
