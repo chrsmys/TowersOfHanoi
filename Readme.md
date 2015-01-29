@@ -5,7 +5,7 @@ Towers Of Hanoi IOS w/ Autosolve
 ==================
 Demo
 ==================
-![alt tag](https://raw.githubusercontent.com/chrsmys/TowersOfHanoi/master/file.gif)
+![alt tag](https://raw.githubusercontent.com/chrsmys/TowersOfHanoi/current-branch/file.gif)
 
 ==================
 Towers of Hanoi for IOS w/ Autosolve
